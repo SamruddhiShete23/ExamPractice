@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/Cal.css"></link>
+</head>
+<body style="background-image: url(../Assets/Images/WhatsApp\ Image\ 2023-12-09\ at\ 11.59.06\ AM.jpeg);background-position: center;">
+
+    <div class="M1 " >
+    <label for="num1"><b><u>Enter First Number :</u></b></label>
+    <input type="number" id="num1">
+    <br>
+    <br>
+
+    <label for="num2"><b><u>Enter Second Number :</u></b></label>
+    <input type="number" id="num2" class="border">
+    <br>
+    <br>
+    <button type="button" value="ADD" class="B1" onclick="add()">ADD</button>
+    <button type="button" value="SUB" class="B1" onclick="sub()">SUB</button>
+    <button type="button" value="MUL" class="B1" onclick="mul()">MUL</button>
+    <button type="button" value="DIV" class="B1" onclick="div()">DIV</button>
+
+    <br>
+    <br>
+    <input type="text"name="result" id="result" placeholder="RESULT" style="color: black; border-color: black;">
+
+</div>
+
+<script>
+    function add(){
+        var v1=document.getElementById("num1").value;
+       
+        var v2=document.getElementById("num2").value;
+       
+        document.getElementById("result").value=parseInt(v1)+parseInt(v2);
+    }
+
+    function sub()
+    {
+        var v1=document.getElementById("num1").value;
+        var v2=document.getElementById("num2").value;
+        document.getElementById("result").value=parseInt(v1)-parseInt(v2);
+    }
+
+    function mul()
+    {
+        var v1=document.getElementById("num1").value;
+        var v2=document.getElementById("num2").value;
+        document.getElementById("result").value=parseInt(v1)*parseInt(v2);
+    }
+
+
+    function div()
+    {
+        var v1=document.getElementById("num1").value;
+        var v2=document.getElementById("num2").value;
+        document.getElementById("result").value=parseInt(v1)/parseInt(v2);
+    }
+
+
+
+</script>
+
+
+
+    
+</body>
+</html>
